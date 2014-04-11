@@ -5,13 +5,14 @@ node_js:
   - "0.8"
   
 addons:
-  firefox: "19.0"
+  firefox: "21.0"
   hosts:
     - google.com
     - asdf.com
   
 before_install:
   - firefox --version
+  
 after_success:
   - rm -rf shippable/
 
