@@ -12,4 +12,6 @@ addons:
   
 before_install:
   - firefox --version
+after_success:
+  - rm -rf shippable/
 
